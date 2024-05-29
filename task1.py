@@ -1,10 +1,8 @@
-# !pip install pandas
-# !pip install openpyxl
+
 import streamlit as st
 import pandas as pd
 
 # ---------Task 1: Rename the Column names----------
-
 
 df=pd.read_excel("census_2011.xlsx")
 change_column_name={
