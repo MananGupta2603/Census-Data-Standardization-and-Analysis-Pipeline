@@ -1,0 +1,12 @@
+
+1) Task 4 --> 2times population are given so how to calculate another population
+
+2) how to fetch data form mongodb and transfer into local db
+3)error coming to load data in xampp-->[Households_with_TV_Computer_Laptop_Telephone_mobile_phone_and_Scooter_Car] name is too long
+ 
+
+
+ -------------------------------------------------------------------------------
+# My Actions
+ 
+ i change big names to small to stored data in db
