@@ -27,6 +27,8 @@ This project aims to clean, process and analyzing census data. Standardization e
     !python -m pip install "pymongo[srv]"
 **Note:** If you are running this commands in cmd[Command prompt], so remove this (!) sign.
 
+    !pip install tabulate
+**Note:** If you are using vs code to run codes, so you can install this to display your DB(database) data in table formate inside vs code. 
 ## Data Cleaning,Modifying and Processing
 * **Task 1:** Rename the Column names
     * [Task1.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task1.py)
@@ -47,28 +49,27 @@ This project aims to clean, process and analyzing census data. Standardization e
 
 * [Task5.ipynb](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.ipynb)
 
-## SQL 
+## SQL Queries
 
 * **Task 7:** Run Query on the database and show output on streamlit
     * **Note:** To run Query on streamlit write:
       
              streamlit run file_name.py
-        
     * [Task 7](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/tree/main/Task%207)
         * 1)What is the total population of each district?
-
             * [Task7.1.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/Task7.1.py)
         * 2)How many literate males and females are there in each district?
-
             * [Task7.2.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.2.py)
         * 3)What is the percentage of workers (both male and female) in each district?
             * [Task7.3.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.3.py)
-        * [Task7.4.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.4.py)
-        * [Task7.5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.5.py)
-        * [Task7.6.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.6.py)
-        * [Task7.7.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.7.py)
-        * [Task7.8.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.8.py)
+        * 4)How many households have access to LPG or PNG as a cooking fuel in each district?
+          * [Task7.4.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.4.py)
+        * 5)What is the religious composition (Hindus, Muslims, Christians, etc.) of each district?
+          * [Task7.5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.5.py)
+        * 6)How many households have internet access in each district?
+          * [Task7.6.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.6.py)
+        * 7)What is the educational attainment distribution (below primary, primary, middle, secondary, etc.) in each district?
+          * [Task7.7.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.7.py)
+        * 8)How many households have access to various modes of transportation (bicycle, car, radio, television, etc.) in each district?
+          * [Task7.8.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.8.py)
         
-## Documentation
-
-[Documentation](https://linktodocumentation)
