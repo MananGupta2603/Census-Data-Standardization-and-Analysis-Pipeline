@@ -4,7 +4,7 @@ import pandas as pd
 
 # ---------Task 1: Rename the Column names----------
 
-df=pd.read_excel("census_2011.xlsx")
+df=pd.read_csv("census-2011.csv")
 change_column_name={
   'State name': 'State/UT',
   'District name': 'District',
