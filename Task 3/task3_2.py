@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df=pd.read_excel("census_2011.xlsx")
+df=pd.read_csv("census-2011.csv")
 change_state_name=[
 'Leh(Ladakh)',
 'Kargil'
