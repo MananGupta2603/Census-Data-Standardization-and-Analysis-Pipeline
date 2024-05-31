@@ -49,7 +49,7 @@ This project aims to clean, process and analyzing census data. Standardization e
 
 * [Task5.ipynb](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.ipynb)
 
-## SQL Queries
+## Data Analysis
 
 * **Task 7:** Run Query on the database and show output on streamlit
     * **Note:** To run Query on streamlit write:
