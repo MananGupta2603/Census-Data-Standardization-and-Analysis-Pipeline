@@ -1,3 +1,4 @@
+
 import mysql.connector
 import streamlit as st
 import pandas as pd
@@ -10,14 +11,42 @@ password=""
 )
 mycursor=mydb.cursor(buffered=True)
 #-------------------------------------
-mycursor.execute("select District, Below_Primary_Education,Primary_Education,Middle_Education,Secondary_Education,Higher_Education,Graduate_Education,Other_Education,Literate_Education,Illiterate_Education,Total_Education from census_db.census")
+#--> how this code work ex--> state= ladakh, sum=41467 ,count=2(number of state) percentage= (41467*100)/2=2073350
+
+mycursor.execute("SELECT State_UT,sum(Power_Parity_Less_than_Rs_45000) As Households_fall_below_the_poverty_line  FROM census_db.census Group By state_ut")
 out=mycursor.fetchall()
 
 df=pd.DataFrame(out,columns=[i[0]for i in mycursor.description])
 
-st.header("The Educational Attainment Distribution ")
+st.header("Households fall below the poverty line in each state ")
 st.table(df)
 
 # print(tabulate(out,headers=[i[0] for i in mycursor.description],tablefmt='psql'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
