@@ -47,7 +47,7 @@ This project aims to clean, process and analyzing census data. Standardization e
     * [Task4.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task4.py)
 ## Storing Cleaned Census Data with MongoDB 
 
-* [Task5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.py)
+* [Task5.ipynb](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.ipynb)
 
 ## SQL Queries
 
@@ -72,4 +72,29 @@ This project aims to clean, process and analyzing census data. Standardization e
           * [Task7.7.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.7.py)
         * 8)How many households have access to various modes of transportation (bicycle, car, radio, television, etc.) in each district?
           * [Task7.8.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.8.py)
+        * 9)What is the condition of occupied census houses (dilapidated, with separate kitchen, with bathing facility, with latrine facility, etc.) in each district?
+          * [Task7.9.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.9.py)
+        * 10)How is the household size distributed (1 person, 2 persons, 3-5 persons, etc.) in each district?
+          * [Task7.10.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.10.py)
+        * 11)What is the total number of households in each state?
+          * [Task7.11.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.11.py)
+        * 12)How many households have a latrine facility within the premises in each state?
+          * [Task7.12.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.12.py)
+        * 13)What is the average household size in each state?
+          * [Task7.13.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.13.py)
+        * 14)How many households are owned versus rented in each state?
+          * [Task7.14.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.14.py)
+        * 15)What is the distribution of different types of latrine facilities (pit latrine, flush latrine, etc.) in each state?
+          * [Task7.15.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.15.py)
+        * 16)How many households have access to drinking water sources near the premises in each state?
+          * [Task7.16.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.16.py)
+        * 17)What is the average household income distribution in each state based on the power parity categories?
+          * [Task7.17.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.17.py)
+        * 18)What is the percentage of married couples with different household sizes in each state?
+          * [Task7.18.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.18.py)
+        * 19)How many households fall below the poverty line in each state based on the power parity categories?
+          * [Task7.19.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.19.py)
+        * 20)What is the overall literacy rate (percentage of literate population) in each state?
+          * [Task7.20.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.20.py)
+
         
