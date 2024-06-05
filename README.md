@@ -45,9 +45,12 @@ This project aims to clean, process and analyzing census data. Standardization e
 
 * **Task 4:** Find and process Missing Data
     * [Task4.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task4.py)
+* **Note:** The [main.ipynb](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/main.ipynb) file contains the first four tasks.
+* 
 ## Create MongoDB Collection
 
 * [Task5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.py)
+* 
 ## Storing Cleaned Census Data with MongoDB 
 
 * [Task6.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task6.py)
