@@ -4,7 +4,9 @@ import pandas as pd
 
 # ---------Task 1: Rename the Column names----------
 
-df=pd.read_csv("census-2011.csv")
+df=pd.read_csv("Clean_Data\Clean_Data.csv")
+temp=pd.read_csv("Original_Data\census-2011.csv")
+
 change_column_name={
   'State name': 'State/UT',
   'District name': 'District',
@@ -18,5 +20,7 @@ change_column_name={
   'Age not stated': 'Age_Not_Stated'
 }
 df.rename(columns=change_column_name,inplace=True)
-st.write(df)
+st.write(df.columns)
+st.write(temp.columns)
+
 

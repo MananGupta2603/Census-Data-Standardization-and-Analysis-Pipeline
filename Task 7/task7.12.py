@@ -10,12 +10,12 @@ password=""
 )
 mycursor=mydb.cursor(buffered=True)
 #-------------------------------------
-mycursor.execute("select District, Condition_of_occupied_census_houses_Dilapidated_Households,Households_with_separate_kitchen_Cooking_inside_house,Having_bathing_facility_Total_Households,Having_latrine_facility_within_the_premises_Total_Households,Ownership_Owned_Households,Ownership_Rented_Households from census_db.census")
+mycursor.execute("select State_UT, sum(Having_latrine_facility_within_the_premises_Total_Households) As latrine_facility_within_the_premises  from census_db.census group by State_UT")
 out=mycursor.fetchall()
 
 df=pd.DataFrame(out,columns=[i[0]for i in mycursor.description])
 
-st.header("The condition of occupied census houses ")
+st.header("Households have a latrine facility within the premises in each state")
 st.table(df)
 
 # print(tabulate(out,headers=[i[0] for i in mycursor.description],tablefmt='psql'))

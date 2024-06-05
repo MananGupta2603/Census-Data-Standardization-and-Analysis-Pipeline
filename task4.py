@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df=pd.read_csv("census-2011.csv")
+df=pd.read_csv("Original_Data\census-2011.csv")
 st.header("Sum of Null Values in each column")
 a=df.isnull().sum()
 st.write(a)
@@ -33,4 +33,5 @@ new_df=pd.DataFrame({
 st.write(df)
 st.header("Comparesion Of Both Dataes")
 st.write(new_df) #transpose df
-
+a=df.isnull().sum()
+st.write(a)

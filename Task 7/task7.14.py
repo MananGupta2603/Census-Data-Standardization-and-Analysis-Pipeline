@@ -11,7 +11,7 @@ password=""
 mycursor=mydb.cursor(buffered=True)
 #-------------------------------------
 
-mycursor.execute('''SELECT State_UT,SUM(CASE WHEN Ownership_Owned_Households = 'Y' THEN 1 ELSE 0 END) AS Households_Owned,SUM(CASE WHEN Ownership_Rented_Households = 'Y' THEN 1 ELSE 0 END) AS Households_Rented FROM census_db.census GROUP BY State_UT;
+mycursor.execute('''SELECT State_UT,SUM(Ownership_Owned_Households) AS Households_Owned,SUM(Ownership_Rented_Households) AS Households_Rented FROM census_db.census GROUP BY State_UT;
 ''')
 
 out=mycursor.fetchall()

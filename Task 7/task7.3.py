@@ -10,7 +10,7 @@ password=""
 )
 mycursor=mydb.cursor(buffered=True)
 #-------------------------------------
-mycursor.execute("select District,(Male_Workers/Workers *100 ) AS Percentage_of_Male_workers,(Female_Workers/Workers *100 ) AS Percentage_of_Female_workers from census_db.census")
+mycursor.execute("select  District,Male_Workers,(Male_Workers/Workers *100 ) AS Percentage_of_Male_workers,Female_Workers,(Female_Workers/Workers *100 ) AS Percentage_of_Female_workers,Workers from census_db.census")
 out=mycursor.fetchall()
 
 df=pd.DataFrame(out,columns=[i[0]for i in mycursor.description])

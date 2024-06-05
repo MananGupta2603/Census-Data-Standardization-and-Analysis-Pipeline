@@ -15,7 +15,7 @@ out=mycursor.fetchall()
 
 df=pd.DataFrame(out,columns=[i[0]for i in mycursor.description])
 
-st.header("Religion_Composition(Hindus,Muslims,Sikhs,Buddhists,Jains)")
+st.header("Religion_Composition(Hindus,Muslims...)")
 st.table(df)
 
 # print(tabulate(out,headers=[i[0] for i in mycursor.description],tablefmt='psql'))

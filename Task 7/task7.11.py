@@ -15,7 +15,7 @@ out=mycursor.fetchall()
 
 df=pd.DataFrame(out,columns=[i[0]for i in mycursor.description])
 
-st.header("The distribution of different types of latrine facilities")
+st.header("The total number of households in each state")
 st.table(df)
 
 # print(tabulate(out,headers=[i[0] for i in mycursor.description],tablefmt='psql'))

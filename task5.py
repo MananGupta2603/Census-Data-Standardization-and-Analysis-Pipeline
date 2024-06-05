@@ -15,13 +15,6 @@ try:
 except Exception as e:
     print(e)
 
-#------------ load data into mongodb------
-client=MongoClient("mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").test.census
-#-------------------------------
-census_data=pd.read_excel("demo_final3.xlsx")
-census_dict=census_data.to_dict("records")
-client.insert_many(census_dict)
-
-#------to print data-----------
-for x in client.find():
-    print(x)
+#----creating census collection in test db---
+client=MongoClient("mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").project.census
+#------------------------------

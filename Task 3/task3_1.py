@@ -15,8 +15,9 @@ change_state_name=[
 'Khammam'
 ]
 a=df[df['District name'].isin(change_state_name)]
-st.write(a)
+st.write(a[['State name','District name']])
 
 df.loc[df['District name'].isin(change_state_name),'State name'] = 'Telangana'
 
-df[df['District name'].isin(change_state_name)]
+b=df[df['District name'].isin(change_state_name)]
+st.write(b[['State name','District name']])
