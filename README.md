@@ -63,7 +63,7 @@ This project aims to clean, process and analyzing census data. Standardization e
              streamlit run file_name.py
     * [Task 7](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/tree/main/Task%207)
         * 1)What is the total population of each district?
-            * [Task7.1.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/Task7.1.py)
+            * [Task7.1.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/sql.py#L30-L34)
         * 2)How many literate males and females are there in each district?
             * [Task7.2.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/Task%207/task7.2.py)
         * 3)What is the percentage of workers (both male and female) in each district?
