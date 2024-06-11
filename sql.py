@@ -98,7 +98,7 @@ def window_9():
             Having_bathing_facility_Total_Households AS Houses_with_Bathing_facility, \
             Having_latrine_facility_within_the_premises_Total_Households AS Houses_with_Latrine_facility, \
             Not_having_bathing_facility_within_the_premises_Total_Households AS Houses_without_Bathing_facility, \
-            No_Latrine_Alt_Open AS Houses_without_latrine_facility \
+            Not_having_latrine_within_premises_Other_source_Open_Households AS Houses_without_latrine_facility \
             FROM Census_DB.Census')
 
 # window 10 : How is the household size distributed (1 person, 2 persons, 3-5 persons, etc.) in each district?
@@ -158,8 +158,8 @@ def window_14():
 def window_15():
     window('Distribution of different types of latrine facilities in each state',
             'SELECT State_UT, SUM(Type_of_latrine_facility_Pit_latrine_Households) AS Pit_Latrine, \
-            SUM(TypeoflatrinefacilityNightsoildisposedintoopendrainHouseholds) AS Night_soil_disposed_into_open_drain_Latrine, \
-            SUM(T_LatrineFac_FP_ConOtherSys_HH) AS Flush_or_Pour_Latrine, \
+            SUM(Type_of_latrine_facility_Night_soil_disposed_into_open_drain) AS Night_soil_disposed_into_open_drain_Latrine, \
+            SUM(Type_of_latrine_Flush_pour_connected_to_other_system_Households) AS Flush_or_Pour_Latrine, \
             SUM(Type_of_latrine_facility_Other_latrine_Households) AS Other_Latrine_types \
             FROM Census_DB.Census \
             GROUP BY State_UT')

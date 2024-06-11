@@ -26,7 +26,7 @@ df = pd.DataFrame(mongo_data)
 if '_id' in df.columns:
     df = df.drop(columns=['_id'])
 
-# dictionary to rename columns
+# dictionary to renameing columns which length are more than 65
 column_rename_map = {
     'Households_with_TV_Computer_Laptop_Telephone_mobile_phone_and_Scooter_Car': 'Households_TV_Computer_Laptop_Telephone_mobile_phone_Scooter_Car',
     #----------------------------

@@ -21,5 +21,5 @@ client=MongoClient("mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.
 #-------------------------------
 census_data=pd.read_csv("Clean_Data\Clean_Data.csv")
 census_dict=census_data.to_dict("records")
-# client.insert_many(census_dict)
+# client.insert_many(census_dict)         #to use uncommand this
 print("Data inserted successfully!")
