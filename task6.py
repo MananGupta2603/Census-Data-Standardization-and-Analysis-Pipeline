@@ -2,6 +2,7 @@ from pymongo import MongoClient
 import pandas as pd
 from sqlalchemy import create_engine
 
+
 # MongoDB connection details
 mongo_uri = "mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 database_name = "census_db"
@@ -15,9 +16,8 @@ try:
     # Fetching data from MongoDB
     mongo_data = list(collection.find({}))
     print("Connected to MongoDB and fetched data successfully")
-except errors.ServerSelectionTimeoutError as err:
-    print(f"Error: {err}")
-    print("Please ensure MongoDB is running and accessible at localhost:27017")
+except :
+    print("Failed")
     exit(1)
 
 
