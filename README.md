@@ -52,7 +52,7 @@ This project aims to clean, process and analyzing census data. Standardization e
 
 * [Task5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.py)
   
-##Fetch data from MongoDB and upload it to MySQL.
+## Fetch data from MongoDB and upload it to MySQL.
 
 * [Task6.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task6.py)
 
