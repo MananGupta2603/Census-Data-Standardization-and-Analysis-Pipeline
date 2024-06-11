@@ -25,6 +25,7 @@ This project aims to clean, process and analyzing census data. Standardization e
     !pip install mysql.connector.python
     !pip install streamlit
     !python -m pip install "pymongo[srv]"
+    !pip install sqlalchemy"
 **Note:** If you are running this commands in cmd[Command prompt], so remove this (!) sign.
 
     !pip install tabulate
@@ -47,11 +48,11 @@ This project aims to clean, process and analyzing census data. Standardization e
     * [Task4.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task4.py)
 * **Note:** The [main.ipynb](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/main.ipynb) file contains the first four tasks.
  
-## Create MongoDB Collection
+## Save Data Into MongoDB 
 
 * [Task5.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task5.py)
   
-## Storing Cleaned Census Data with MongoDB 
+##Fetch data from MongoDB and upload it to MySQL.
 
 * [Task6.py](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/task6.py)
 
