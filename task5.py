@@ -18,3 +18,8 @@ except Exception as e:
 #----creating census collection in test db---
 client=MongoClient("mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").project.census
 #------------------------------
+#-------------------------------
+census_data=pd.read_csv("Clean_Data\Clean_Data.csv")
+census_dict=census_data.to_dict("records")
+# client.insert_many(census_dict)
+print("Data inserted successfully!")

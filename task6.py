@@ -1,31 +1,63 @@
+from pymongo import MongoClient
 import pandas as pd
-import streamlit as st
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
+from sqlalchemy import create_engine
 
-uri = "mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# MongoDB connection details
+mongo_uri = "mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+database_name = "census_db"
+collection_name = "census"
 
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-
-# Send a ping to confirm a successful connection
+# Establishing connection to MongoDB
 try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
+    client = MongoClient(mongo_uri, serverSelectionTimeoutMS=20000)
+    db = client[database_name]
+    collection = db[collection_name]
+    # Fetching data from MongoDB
+    mongo_data = list(collection.find({}))
+    print("Connected to MongoDB and fetched data successfully")
+except errors.ServerSelectionTimeoutError as err:
+    print(f"Error: {err}")
+    print("Please ensure MongoDB is running and accessible at localhost:27017")
+    exit(1)
 
-#------------ upload data------
-client=MongoClient("mongodb+srv://mananngupta:manan123@cluster0.0o5bzkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").census_db.census
-#-------------------------------
-census_data=pd.read_csv("Clean_Data\Clean_Data.csv")
-census_dict=census_data.to_dict("records")
-# client.insert_many(census_dict)
 
-#------to print data----------
-result=client.find({},{"_id":False})
-data=list(result)
-df=pd.DataFrame(data)
-st.header("Main_Data")
-st.table(df)
+# Transforming data
+df = pd.DataFrame(mongo_data)
+if '_id' in df.columns:
+    df = df.drop(columns=['_id'])
 
+# dictionary to rename columns
+column_rename_map = {
+    'Households_with_TV_Computer_Laptop_Telephone_mobile_phone_and_Scooter_Car': 'Households_TV_Computer_Laptop_Telephone_mobile_phone_Scooter_Car',
+    #----------------------------
+    'Type_of_latrine_facility_Night_soil_disposed_into_open_drain_Households':'Type_of_latrine_facility_Night_soil_disposed_into_open_drain',
+    #----------------------------
+    'Type_of_latrine_facility_Flush_pour_flush_latrine_connected_to_other_system_Households':'Type_of_latrine_Flush_pour_connected_to_other_system_Households',
+    #----------------------------
+    'Not_having_latrine_facility_within_the_premises_Alternative_source_Open_Households':'Not_having_latrine_within_premises_Other_source_Open_Households',
+    #----------------------------
+    'Main_source_of_drinking_water_Handpump_Tubewell_Borewell_Households':'Source_of_drinking_water_Handpump_Tubewell_Borewell_Households',
+    #----------------------------
+    'Main_source_of_drinking_water_Other_sources_Spring_River_Canal_Tank_Pond_Lake_Other_sources__Households':'Drinking_water_Spring_River_Canal_Tank_Pond_Lake_Other_Household'
+    
+}
+
+df = df.rename(columns=column_rename_map)
+
+# Relational database connection details
+db_type = 'mysql'  
+user = 'root'
+password = ''
+host = 'localhost'
+port = '3306'
+database = 'census_db'
+
+
+# Creating a connection string and engine
+connection_string = f"{db_type}+mysqldb://{user}:{password}@{host}:{port}/{database}"
+engine = create_engine(connection_string)
+
+# Uploading data to the relational database
+table_name = 'census'
+df.to_sql(table_name, engine, if_exists='replace', index=False)
+print("Data uploaded to the relational database successfully")
