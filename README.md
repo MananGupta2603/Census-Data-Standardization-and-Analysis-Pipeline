@@ -112,7 +112,5 @@ This project aimed to demonstrate the process of cleaning, standardizing, and an
 - [Project Repository](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline): Access all project files, including scripts and datasets.
 - [Streamlit Documentation](https://docs.streamlit.io/): Learn more about deploying interactive apps for data visualization.
 
----
 
-Thank you for exploring our Census Data Standardization and Analysis Pipeline. We hope you find it useful for your data-driven insights and decision-making processes.
 
