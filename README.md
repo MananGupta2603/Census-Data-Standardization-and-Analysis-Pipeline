@@ -111,6 +111,6 @@ This project aimed to demonstrate the process of cleaning, standardizing, and an
 
 - [Project Repository](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline): Access all project files, including scripts and datasets.
 - [Streamlit Documentation](https://docs.streamlit.io/): Learn more about deploying interactive apps for data visualization.
-
+- [Pandas Documentation](https://pandas.pydata.org/docs/): Official Pandas Documentation
 
 
