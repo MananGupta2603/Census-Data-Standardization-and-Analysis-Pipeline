@@ -30,7 +30,6 @@ This project aims to clean, process and analyzing census data. Standardization e
 
     !pip install tabulate
 **Note:** If you are using vs code to run codes, so you can install this to display your DB(database) data in table formate inside vs code. 
-# Data Engineering Tasks and Links
 
 ## Data Cleaning, Modifying, and Processing
 
@@ -93,3 +92,27 @@ streamlit run file_name.py
 | 7.18 | What is the percentage of married couples with different household sizes in each state? | [Task7.18](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/sql.py#L194-L208) |
 | 7.19 | How many households fall below the poverty line in each state based on the power parity categories? | [Task7.19](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/sql.py#L209-L215) |
 | 7.20 | What is the overall literacy rate (percentage of literate population) in each state? | [Task7.20](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline/blob/main/sql.py#L216-L224) |
+
+---
+
+## Conclusion
+
+This project aimed to demonstrate the process of cleaning, standardizing, and analyzing census data using Python. The pipeline covered various tasks from renaming columns and handling missing data to performing advanced data analysis queries at both district and state levels.
+
+### Key Highlights
+
+- **Data Acquisition:** Acquired census data from the designated source, ensuring compatibility with the pipeline.
+- **Data Cleaning and Standardization:** Renamed columns and standardized state/UT names to ensure consistency and accuracy.
+- **Data Analysis:** Executed a series of queries to extract insightful information such as demographic distributions, literacy rates, household amenities, and economic indicators across districts and states.
+
+---
+
+## Additional Resources
+
+- [Project Repository](https://github.com/MananGupta2603/Census-Data-Standardization-and-Analysis-Pipeline): Access all project files, including scripts and datasets.
+- [Streamlit Documentation](https://docs.streamlit.io/): Learn more about deploying interactive apps for data visualization.
+
+---
+
+Thank you for exploring our Census Data Standardization and Analysis Pipeline. We hope you find it useful for your data-driven insights and decision-making processes.
+
