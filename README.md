@@ -2,8 +2,17 @@
 # Census Data Standardization and Analysis Pipeline
 
 This project aims to clean, process and analyzing census data. Standardization ensures data uniformity, accuracy, and accessibility of the census data for further analysis and visualization.
+## Technologies Used:
+1) Python
+2) SQL
+3) MongoDB
+4) MySQL
+5) Pandas Libraries
 
-**Key functionalities:**
+## WorkFlow
+![](workflow_census_data.jpg)
+
+## Key functionalities:
 
  * **1)Data Acquisition:** The pipeline will retrieve census data from the designated source. This might involve handling different data formats.
 
