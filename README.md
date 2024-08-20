@@ -3,11 +3,11 @@
 
 This project aims to clean, process and analyzing census data. Standardization ensures data uniformity, accuracy, and accessibility of the census data for further analysis and visualization.
 ## Technologies Used:
-1) Python
-2) SQL
-3) MongoDB
-4) MySQL
-5) Pandas Libraries
+* **Python**: Leveraged for data cleaning, transformation, and automation of the processing pipeline.
+* **SQL**: Utilized for structured data querying and manipulation within relational databases.
+* **MongoDB**: Implemented for handling unstructured and semi-structured data, providing flexibility in data storage.
+* **MySQL**: Employed for managing and querying large datasets, ensuring efficient data retrieval and storage.
+* **Pandas Libraries**: Applied for powerful data manipulation and analysis, enabling efficient handling of large data frames.
 
 ## WorkFlow
 ![](workflow_census_data.jpg)
