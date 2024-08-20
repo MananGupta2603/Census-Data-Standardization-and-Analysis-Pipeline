@@ -1,7 +1,8 @@
 
 # Census Data Standardization and Analysis Pipeline
 
-This project aims to clean, process and analyzing census data. Standardization ensures data uniformity, accuracy, and accessibility of the census data for further analysis and visualization.
+This project is focused on the comprehensive cleaning, processing, and analysis of census data. The primary objective is to standardize the data, ensuring uniformity, accuracy, and easy accessibility. This standardization process is crucial for enabling more effective and meaningful analysis and visualization of the census data, thereby providing insights that are both accurate and reliable for decision-making and research purposes.
+
 ## Technologies Used:
 * **Python**: Leveraged for data cleaning, transformation, and automation of the processing pipeline.
 * **SQL**: Utilized for structured data querying and manipulation within relational databases.
